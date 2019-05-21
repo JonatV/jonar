@@ -6,14 +6,20 @@
 <script src="https://unpkg.com/aframe-supercraft-loader/dist/aframe-supercraft-loader.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-    <a-marker preset='hiro'>
+    <a-marker preset='hiro'><!--
 	<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 1 0" segments-height="53">
          <a-animation attribute="rotation"
               to="0 360 0"
               dur="10000"
               easing= "linear"     
-              repeat="loop"></a-animation>
+              repeat="loop"></a-animation>-->
      </a-sphere>
+	<a-entity 
+            obj-model=”obj: url(/wooden%2Bwatch%2Btower2.obj);”>
+        </a-entity>
+      
+
+
 </a-marker>
       	<a-entity camera></a-entity>
 
