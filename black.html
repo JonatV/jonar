@@ -1,0 +1,24 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<!doctype HTML>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+<script src="https://aframe.io/aframe/dist/aframe-master.min.js"></script>
+   <script src="https://aframe.io/aframe/examples/test/shaders/shaders/noise.js"></script>
+   <style>
+      a-scene {
+        height: 300px;
+        width: 30px;
+      }
+    </style>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+   <a-scene class="a-scene" embedded arjs='sourceType:webcam;'>
+      <a-marker preset="hiro">
+      <a-sphere scale=".2 .2 .2" geometry="primitive: sphere; radius: 3" material="shader: noise" position="0 0.5 0" rotation="45 45 0" color="black"></a-sphere>
+      </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>

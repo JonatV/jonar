@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head><!--<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>-->
+<script src="https://aframe.io/aframe/dist/aframe-master.min.js"></script>
+  <script src="https://aframe.io/aframe/dist/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+
+  
+<a-assets>  
+<a-asset-item id="brainstem" src="https://cdn.aframe.io/test-models/models/glTF-2.0/brainstem/BrainStem.gltf"></a-asset-item>
+</a-assets>
+<a-scene arjs="sourceType: webcam;" renderer="colorManagement: true;">
+<a-marker preset='hiro'>
+<a-entity scale=" 1 1 1 " position="0 0 0">
+<a-entity gltf-model="#brainstem" position="0 0 0 " scale="1 1 1"></a-entity>
+</a-entity></a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
